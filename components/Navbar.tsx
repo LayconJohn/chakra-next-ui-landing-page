@@ -33,7 +33,7 @@ export default function Navbar() {
         color={useColorModeValue('gray.600', 'white')}
         minH={'60px'}
         py={{ base: 2 }}
-        px={{ base: 4 }}
+        px={{ base: 10, md: 12}}
         borderBottom={1}
         borderStyle={'solid'}
         borderColor={useColorModeValue('gray.200', 'gray.900')}
@@ -54,7 +54,7 @@ export default function Navbar() {
             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
             fontFamily={'heading'}
             color={useColorModeValue('gray.800', 'white')}>
-            Logo
+            TeleData
           </Text>
 
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
@@ -68,7 +68,7 @@ export default function Navbar() {
           direction={'row'}
           spacing={6}>
           <Button as={'a'} fontSize={'sm'} fontWeight={400} variant={'link'} href={'#'}>
-            Sign In
+            Login
           </Button>
           <Button
             as={'a'}
@@ -81,7 +81,7 @@ export default function Navbar() {
             _hover={{
               bg: 'pink.300',
             }}>
-            Sign Up
+            Registrar
           </Button>
         </Stack>
       </Flex>
@@ -243,22 +243,22 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: 'Inspiration',
+    label: 'Sobre Nós',
     children: [
       {
-        label: 'Explore Design Work',
-        subLabel: 'Trending Design to inspire you',
+        label: 'Nossa história',
+        subLabel: 'Conheça a Teledata',
         href: '#',
       },
       {
-        label: 'New & Noteworthy',
-        subLabel: 'Up-and-coming Designers',
+        label: 'Nossa Equipe',
+        subLabel: 'Conheça a equipe ds sonhos',
         href: '#',
       },
     ],
   },
   {
-    label: 'Find Work',
+    label: 'Produtos',
     children: [
       {
         label: 'Job Board',
@@ -273,11 +273,11 @@ const NAV_ITEMS: Array<NavItem> = [
     ],
   },
   {
-    label: 'Learn Design',
+    label: 'Entrar em contato',
     href: '#',
   },
   {
-    label: 'Hire Designers',
+    label: 'Faça um teste',
     href: '#',
   },
 ]
