@@ -1,6 +1,5 @@
 'use client'
 
-import Head from 'next/head'
 import {
   Box,
   Heading,
@@ -26,15 +25,13 @@ export default function HeroSection() {
             fontWeight={600}
             fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
             lineHeight={'110%'}>
-            Make money from <br />
-            <Text as={'span'} color={'green.400'}>
-              your audience
+            Traga segurança <br />
+            <Text as={'span'} color={'blue.400'}>
+              para suas redes
             </Text>
           </Heading>
           <Text color={'gray.500'}>
-            Monetize your content by charging your most loyal readers and reward them
-            loyalty points. Give back to your loyal readers by granting them access to
-            your pre-releases and sneak-peaks.
+            Há 33 anos trazemos soluções inovadoras que conectam e protegem pessoas e negócios.
           </Text>
           <Stack
             direction={'column'}
@@ -43,17 +40,17 @@ export default function HeroSection() {
             alignSelf={'center'}
             position={'relative'}>
             <Button
-              colorScheme={'green'}
-              bg={'green.400'}
+              colorScheme={'#008ABF'}
+              bg={'#00A6E1'}
               rounded={'full'}
               px={6}
               _hover={{
                 bg: 'green.500',
               }}>
-              Get Started
+              Comece Já
             </Button>
             <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
-              Learn more
+              Ler mais
             </Button>
             <Box>
               <Icon
@@ -71,7 +68,7 @@ export default function HeroSection() {
                 right={'-125px'}
                 top={'-15px'}
                 transform={'rotate(10deg)'}>
-                Starting at $15/mo
+                Faça seu teste
               </Text>
             </Box>
           </Stack>
