@@ -9,7 +9,7 @@ import {
   useColorModeValue,
   VisuallyHidden,
 } from '@chakra-ui/react'
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
+import { FaInstagram, FaTwitter, FaYoutube, FaLinkedinIn } from 'react-icons/fa'
 import { ReactNode } from 'react'
 
 const SocialButton = ({
@@ -56,15 +56,15 @@ export default function Footer() {
         spacing={4}
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
-        <Text>© 2022 Chakra Templates. All rights reserved</Text>
+        <Text>© 33.927.849/0001-64 TLD TeleData Comércio e Serviços LTDA 2023 – Todos os direitos reservados.</Text>
         <Stack direction={'row'} spacing={6}>
-          <SocialButton label={'Twitter'} href={'#'}>
-            <FaTwitter />
+          <SocialButton label={'Linkedin'} href={'https://br.linkedin.com/company/tldteledata'}>
+            <FaLinkedinIn />
           </SocialButton>
-          <SocialButton label={'YouTube'} href={'#'}>
+          <SocialButton label={'YouTube'} href={'https://www.youtube.com/channel/UCiK93fuMrgwL11jltxwzHEA'}>
             <FaYoutube />
           </SocialButton>
-          <SocialButton label={'Instagram'} href={'#'}>
+          <SocialButton label={'Instagram'} href={'https://www.tld.com.br/instagram-2/'}>
             <FaInstagram />
           </SocialButton>
         </Stack>
