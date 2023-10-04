@@ -11,17 +11,10 @@ import {
   useColorModeValue,
   createIcon,
 } from '@chakra-ui/react'
-import { ToastContainer, toast } from "react-toastify";
+import { useToast } from '@chakra-ui/react'
 
 export default function HeroSection() {
-  const toastOptions = {
-    autoClose: 6000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-  };
+  const toast = useToast()
 
 
   return (
@@ -45,14 +38,30 @@ export default function HeroSection() {
             Há 33 anos trazemos soluções inovadoras que conectam e protegem pessoas e negócios.
           </Text>
           <Stack
-          onClick={() => toast("Em breve...", toastOptions)}
+          onClick={() =>
+            toast({
+              title: 'Em breve te redicionaremos...',
+              description: "Em breve vamos direcionar para a página correta.",
+              status: 'success',
+              duration: 9000,
+              isClosable: true,
+            })
+          }
             direction={'column'}
             spacing={3}
             align={'center'}
             alignSelf={'center'}
             position={'relative'}>
             <Button
-              onClick={() => toast("Em breve...", toastOptions)}
+              onClick={() =>
+                toast({
+                  title: 'Em breve te redicionaremos...',
+          description: "Em breve vamos direcionar para a página correta.",
+                  status: 'success',
+                  duration: 9000,
+                  isClosable: true,
+                })
+              }
               colorScheme={'#008ABF'}
               bg={'#00A6E1'}
               rounded={'full'}
@@ -62,7 +71,15 @@ export default function HeroSection() {
               }}>
               Comece Já
             </Button>
-            <Button variant={'link'} colorScheme={'blue'} size={'sm'} onClick={() => toast("Em breve...", toastOptions)}>
+            <Button variant={'link'} colorScheme={'blue'} size={'sm'} onClick={() =>
+        toast({
+          title: 'Em breve te redicionaremos...',
+          description: "Em breve vamos direcionar para a página correta.",
+          status: 'success',
+          duration: 9000,
+          isClosable: true,
+        })
+      }>
               Ler mais
             </Button>
             <Box>
