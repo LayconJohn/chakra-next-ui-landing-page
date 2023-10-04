@@ -12,7 +12,8 @@ import {
   Icon,
   useColorModeValue,
 } from '@chakra-ui/react'
-import { IoAnalyticsSharp, IoLogoBitcoin, IoSearchSharp } from 'react-icons/io5'
+import { FaNetworkWired } from "react-icons/fa6"
+import { IoAnalyticsSharp, IoShieldCheckmarkSharp } from 'react-icons/io5'
 import { ReactElement } from 'react'
 
 interface FeatureProps {
@@ -46,12 +47,11 @@ export default function Features() {
             p={2}
             alignSelf={'flex-start'}
             rounded={'md'}>
-            Our Story
+            Nossas Soluções
           </Text>
-          <Heading>A digital Product design agency</Heading>
+          <Heading>Levando suas empresas a outro nível de segurança</Heading>
           <Text color={'gray.500'} fontSize={'lg'}>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-            eirmod tempor invidunt ut labore
+            Entregando conectividade de dados, voz e vídeo; segurança nas redes, dispositivos e dados trafegados além da ampla e contínua continuação no ambiente corporativo.
           </Text>
           <Stack
             spacing={4}
@@ -59,19 +59,19 @@ export default function Features() {
               <StackDivider borderColor={useColorModeValue('gray.100', 'gray.700')} />
             }>
             <Feature
-              icon={<Icon as={IoAnalyticsSharp} color={'yellow.500'} w={5} h={5} />}
-              iconBg={useColorModeValue('yellow.100', 'yellow.900')}
-              text={'Business Planning'}
+              icon={<Icon as={IoAnalyticsSharp} color={'white.500'} w={5} h={5} />}
+              iconBg={useColorModeValue('blue.100', 'blue.900')}
+              text={'Infraestrutura'}
             />
             <Feature
-              icon={<Icon as={IoLogoBitcoin} color={'green.500'} w={5} h={5} />}
+              icon={<Icon as={IoShieldCheckmarkSharp} color={'green.500'} w={5} h={5} />}
               iconBg={useColorModeValue('green.100', 'green.900')}
-              text={'Financial Planning'}
+              text={'Cibersegurança'}
             />
             <Feature
-              icon={<Icon as={IoSearchSharp} color={'purple.500'} w={5} h={5} />}
-              iconBg={useColorModeValue('purple.100', 'purple.900')}
-              text={'Market Analysis'}
+              icon={<Icon as={FaNetworkWired} color={'white.500'} w={5} h={5} />}
+              iconBg={useColorModeValue('orange.100', '#FF7E00.900')}
+              text={'Comunicação'}
             />
           </Stack>
         </Stack>
@@ -80,7 +80,7 @@ export default function Features() {
             rounded={'md'}
             alt={'feature image'}
             src={
-              'https://images.unsplash.com/photo-1554200876-56c2f25224fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+              './imagem-redes-teste.jpg'
             }
             objectFit={'cover'}
           />
