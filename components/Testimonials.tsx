@@ -103,7 +103,7 @@ export default function Testimonails() {
     <Box bg={useColorModeValue('gray.100', 'gray.700')}>
       <Container maxW={'7xl'} py={16} as={Stack} spacing={12}>
         <Stack spacing={0} align={'center'}>
-          <Heading>Our Clients Speak</Heading>
+          <Heading>Cases de sucesso</Heading>
           <Text>We have been working with clients around the world</Text>
         </Stack>
         <Stack
@@ -111,50 +111,19 @@ export default function Testimonails() {
           spacing={{ base: 10, md: 4, lg: 10 }}>
           <Testimonial>
             <TestimonialContent>
-              <TestimonialHeading>Efficient Collaborating</TestimonialHeading>
+              <TestimonialHeading>Case Le biscuit</TestimonialHeading>
               <TestimonialText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed
-                imperdiet nibh lectus feugiat nunc sem.
+                Com a abertura de negócios digitais, a Le biscuit contou com a TLD Teledata em parceria com fortinet para implementar nossa solução de segurança da comunicação com a FortiGate, além de adicionar uma infraestrutura de conectividade nos centros de distribuição com pontos de acesso  FortiAP,
+switches FortiSwitch Secure Ethernet e FortiAntennas que ajudam a otimizar a
+cobertura e o desempenho geral da rede sem fio, criando assim uma arquitetura de rede com alta disponibilidade e segurança.
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
               src={
-                'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
+                './Le-Biscuit.png'
               }
-              name={'Jane Cooper'}
-              title={'CEO at ABC Corporation'}
-            />
-          </Testimonial>
-          <Testimonial>
-            <TestimonialContent>
-              <TestimonialHeading>Intuitive Design</TestimonialHeading>
-              <TestimonialText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed
-                imperdiet nibh lectus feugiat nunc sem.
-              </TestimonialText>
-            </TestimonialContent>
-            <TestimonialAvatar
-              src={
-                'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
-              }
-              name={'Jane Cooper'}
-              title={'CEO at ABC Corporation'}
-            />
-          </Testimonial>
-          <Testimonial>
-            <TestimonialContent>
-              <TestimonialHeading>Mindblowing Service</TestimonialHeading>
-              <TestimonialText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed
-                imperdiet nibh lectus feugiat nunc sem.
-              </TestimonialText>
-            </TestimonialContent>
-            <TestimonialAvatar
-              src={
-                'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
-              }
-              name={'Jane Cooper'}
-              title={'CEO at ABC Corporation'}
+              name={'Le Biscuit'}
+              title={'Otimizando sua rede de distribuição, segurança e conectividade'}
             />
           </Testimonial>
         </Stack>
