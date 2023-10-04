@@ -38,15 +38,6 @@ export default function HeroSection() {
             Há 33 anos trazemos soluções inovadoras que conectam e protegem pessoas e negócios.
           </Text>
           <Stack
-          onClick={() =>
-            toast({
-              title: 'Em breve te redicionaremos...',
-              description: "Em breve vamos direcionar para a página correta.",
-              status: 'success',
-              duration: 9000,
-              isClosable: true,
-            })
-          }
             direction={'column'}
             spacing={3}
             align={'center'}
