@@ -11,8 +11,19 @@ import {
   useColorModeValue,
   createIcon,
 } from '@chakra-ui/react'
+import { ToastContainer, toast } from "react-toastify";
 
 export default function HeroSection() {
+  const toastOptions = {
+    autoClose: 6000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+  };
+
+
   return (
     <>
       <Container maxW={'3xl'}>
@@ -34,12 +45,14 @@ export default function HeroSection() {
             Há 33 anos trazemos soluções inovadoras que conectam e protegem pessoas e negócios.
           </Text>
           <Stack
+          onClick={() => toast("Em breve...", toastOptions)}
             direction={'column'}
             spacing={3}
             align={'center'}
             alignSelf={'center'}
             position={'relative'}>
             <Button
+              onClick={() => toast("Em breve...", toastOptions)}
               colorScheme={'#008ABF'}
               bg={'#00A6E1'}
               rounded={'full'}
@@ -49,7 +62,7 @@ export default function HeroSection() {
               }}>
               Comece Já
             </Button>
-            <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
+            <Button variant={'link'} colorScheme={'blue'} size={'sm'} onClick={() => toast("Em breve...", toastOptions)}>
               Ler mais
             </Button>
             <Box>

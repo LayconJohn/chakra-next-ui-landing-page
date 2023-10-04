@@ -23,8 +23,12 @@ import {
   ChevronRightIcon,
 } from '@chakra-ui/icons'
 
+import { useToast } from '@chakra-ui/react'
+
 export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure()
+  const toast = useToast()
+  
 
   return (
     <Box>
@@ -67,10 +71,26 @@ export default function Navbar() {
           justify={'flex-end'}
           direction={'row'}
           spacing={6}>
-          <Button as={'a'} fontSize={'sm'} fontWeight={400} variant={'link'} href={'#'}>
+          <Button as={'a'} fontSize={'sm'} fontWeight={400} variant={'link'} href={'#'} onClick={() =>
+        toast({
+          title: 'Login Em breve...',
+          description: "Em breve você poderá realizar o Login.",
+          status: 'success',
+          duration: 9000,
+          isClosable: true,
+        })
+      }>
             Login
           </Button>
-          <Button
+          <Button onClick={() =>
+        toast({
+          title: 'Cadastro Em breve...',
+          description: "Em breve você poderá realizar o Login.",
+          status: 'success',
+          duration: 9000,
+          isClosable: true,
+        })
+      }
             as={'a'}
             display={{ base: 'none', md: 'inline-flex' }}
             fontSize={'sm'}
@@ -90,6 +110,7 @@ export default function Navbar() {
         <MobileNav />
       </Collapse>
     </Box>
+    
   )
 }
 
