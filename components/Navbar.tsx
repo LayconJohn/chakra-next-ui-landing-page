@@ -248,12 +248,12 @@ const NAV_ITEMS: Array<NavItem> = [
       {
         label: 'Nossa história',
         subLabel: 'Conheça a Teledata',
-        href: '#',
+        href: 'https://www.tld.com.br/teledata/',
       },
       {
         label: 'Nossa Equipe',
         subLabel: 'Conheça a equipe ds sonhos',
-        href: '#',
+        href: 'http://www.bahiaview360.com.br/teledata/',
       },
     ],
   },
@@ -263,21 +263,21 @@ const NAV_ITEMS: Array<NavItem> = [
       {
         label: 'Infra',
         subLabel: 'Conheça nossas soluções de infra',
-        href: '#',
+        href: 'https://www.tld.com.br/solucoes/',
       },
       {
         label: 'SaaS',
         subLabel: 'Conheça nosso SaaS',
-        href: '#',
+        href: 'https://www.tld.com.br/solucoes/',
       },
     ],
   },
   {
     label: 'Entrar em contato',
-    href: '#',
+    href: 'https://www.tld.com.br/#contato',
   },
   {
     label: 'Faça um teste',
-    href: '#',
+    href: 'https://teledata.desk.ms/?LoginPortal',
   },
 ]
